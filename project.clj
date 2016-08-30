@@ -4,7 +4,9 @@
   :license {:name "Eclipse Public License"
             :url "http://www.eclipse.org/legal/epl-v10.html"}
   :dependencies [[org.clojure/clojure "1.7.0"]
-                 [clj-http "2.2.0"]]
+                 [clj-http "2.2.0"]
+                 [environ "1.1.0"]]
+  :plugins [[lein-environ "1.1.0"]]
   :main ^:skip-aot clj-financials.core
   :target-path "target/%s"
   :profiles {:uberjar {:aot :all}})
